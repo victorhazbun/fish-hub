@@ -1,8 +1,8 @@
 import { Router } from 'svelte-easyroute-webpack'
 import App from '../App.svelte'
-import Baits from '../components/Baits.svelte';
-import TackleBox from '../components/TackleBox.svelte';
-import Activity from '../components/Activity.svelte';
+import Baits from '../views/Baits.svelte';
+import TackleBox from '../views/TackleBox.svelte';
+import Activity from '../views/Activity.svelte';
 
 export var router = new Router({
   mode: "hash", // "hash" or "history"
