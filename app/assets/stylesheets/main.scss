@@ -1,15 +1,4 @@
-// Variables
-
-$primary-text-color: #666;
-$secondary-text-color: #6c757d;
-$muted-text-color: #96a1aa;
-$brand-text-color: #e2ebf9;
-$green-accent-color: #94d31b;
-$blue-accent-color: rgb(21, 98, 157);
-$nav-primary-color: darken($blue-accent-color, 15%);
-$nav-secondary-color: rgba($blue-accent-color, 0.8);
-
-$error-color: #E8890C;
+@import "variables";
 
 // Global Styles
 
@@ -44,7 +33,7 @@ a {
   }
 }
 
-// Vue Transitions
+// Transitions
 
 .fade-enter-active,
 .fade-leave-active {
@@ -54,4 +43,112 @@ a {
 .fade-enter,
 .fade-leave-to {
   opacity: 0;
+}
+
+
+.nav-item {
+  a {
+    color: $brand-text-color;
+    opacity: 0.7;
+    text-decoration: none;
+    padding-bottom: 2px;
+
+    &.active,
+    &:hover {
+      color: $brand-text-color;
+      opacity: 1;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.navbar-primary {
+  background-color: $nav-primary-color;
+  padding-bottom: 15px;
+
+  .nav-item {
+    margin-right: 15px;
+
+    a {
+      font-size: 1rem;
+    }
+
+    &.user {
+      color: $muted-text-color;
+    }
+  }
+}
+
+
+// Header
+
+.navbar-secondary {
+  background-color: $nav-secondary-color;
+  padding-bottom: 25px;
+
+  .nav-item {
+    margin: 0 15px;
+    a {
+      font-size: 1.5rem;
+      padding: 0;
+    }
+  }
+
+  .badge {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: $primary-text-color;
+    background-color: $green-accent-color;
+    vertical-align: top;
+    margin-left: 1px;
+    font-feature-settings: "tnum";
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+a.router-link-exact-active {
+  border-bottom: 2px solid #94d31b;
+  opacity: 1;
+}
+
+.brand {
+  text-align: center;
+  background-color: $nav-secondary-color;
+  padding: 20px 0 20px 0;
+
+  .logo {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 12px;
+  }
+
+  .name {
+    font-size: 2.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    color: $brand-text-color;
+  }
+}
+
+// Footer
+
+footer {
+  color: $muted-text-color;
+  text-align: center;
+
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  p {
+    margin-bottom: 0.25rem;
+  }
+
+  a {
+    color: $muted-text-color;
+    text-decoration: underline;
+  }
 }
