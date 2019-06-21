@@ -1,16 +1,42 @@
-/* eslint no-console: 0 */
-// Run this example by adding <%= javascript_pack_tag 'hello_svelte' %> (and
-// <%= stylesheet_pack_tag 'hello_svelte' %> if you have styles in your component)
-// to the head of your layout file,
-// like app/views/layouts/application.html.erb.
-// All it does is render <div>Hello Svelte!</div> at the bottom of the page.
+import { Router } from 'svelte-easyroute-webpack'
+import App from '../App.svelte'
+import Baits from '../components/Baits.svelte';
+import TackleBox from '../components/TackleBox.svelte';
+import Activity from '../components/Activity.svelte';
 
-import App from '../app.svelte'
+export var router = new Router({
+  mode: "hash", // "hash" or "history"
+  routes:[
+    {
+      path: '/',
+      component: Baits,
+      name: 'Baits'
+    },
+    {
+      path: '/baits',
+      component: Baits,
+      name: 'Baits'
+    },
+    {
+      path: '/tackle-box',
+      component: TackleBox,
+      name: 'Tackle Box'
+    },
+    {
+      path: '/activity',
+      component: Activity,
+      name: 'Activity'
+    },
+  ]
+})
 
 document.addEventListener('DOMContentLoaded', () => {
   const app = new App({
     target: document.querySelector('#app'),
-    hydratable: true
+    hydratable: true,
+    props: {
+      router
+    }
   });
 })
 

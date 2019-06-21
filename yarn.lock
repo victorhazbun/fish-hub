@@ -6400,6 +6400,15 @@ svelte-dev-helper@^1.1.9:
   resolved "https://registry.yarnpkg.com/svelte-dev-helper/-/svelte-dev-helper-1.1.9.tgz#7d187db5c6cdbbd64d75a32f91b8998bde3273c3"
   integrity sha1-fRh9tcbNu9ZNdaMvkbiZi94yc8M=
 
+svelte-easyroute-webpack@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/svelte-easyroute-webpack/-/svelte-easyroute-webpack-0.3.0.tgz#484f7307b2cbc46b0c703e63b7c10442dc4ded7a"
+  integrity sha512-/bjH7aNwb5rKDJuJK4qthuPnjR2Ui70uGcOUWjj7wEuvlfXYf5ySnJCQR/IEUyiotE2VJmVJJA1yVzS8HScpkQ==
+  dependencies:
+    svelte "^3.4.4"
+    svelte-loader "^2.13.4"
+    typescript "^3.5.1"
+
 svelte-loader@^2.13.4:
   version "2.13.4"
   resolved "https://registry.yarnpkg.com/svelte-loader/-/svelte-loader-2.13.4.tgz#f44b33583fb580f1d9d11016e9531dafa296bb51"
@@ -6408,7 +6417,7 @@ svelte-loader@^2.13.4:
     loader-utils "^1.1.0"
     svelte-dev-helper "^1.1.9"
 
-svelte@^3.5.3:
+svelte@^3.4.4, svelte@^3.5.3:
   version "3.5.3"
   resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.5.3.tgz#ca9c4a9401a8f00b16aa527009a6d9fe1aa21b0c"
   integrity sha512-hZcfPagZmfz4a59gtvomWlgcojl0dc30+3hplk+wBhAJm9cGjEAosZYpA9bXwF8zaGomO5bFODfCutxvOghTEg==
@@ -6614,6 +6623,11 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+
+typescript@^3.5.1:
+  version "3.5.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.5.2.tgz#a09e1dc69bc9551cadf17dba10ee42cf55e5d56c"
+  integrity sha512-7KxJovlYhTX5RaRbUdkAXN1KUZ8PwWlTzQdHV6xNqvuFOs7+WBo10TQUqT19Q/Jz2hk5v9TQDIhyLhhJY4p5AA==
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"

@@ -1,10 +1,12 @@
 <script>
+  import { onMount } from 'svelte'
+  import RouterLink from 'svelte-easyroute-webpack/RouterLink.svelte'
+
+  export let router
+
+  onMount(() => router.createOutlet())
 </script>
 
-<style>
-  h1 {
-    color: #FF3E00;
-  }
-</style>
+<style></style>
 
-<h1>Hello</h1>
+<div id="router-outlet"></div>
