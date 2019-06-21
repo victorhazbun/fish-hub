@@ -9,12 +9,8 @@ import App from '../app.svelte'
 
 document.addEventListener('DOMContentLoaded', () => {
   const app = new App({
-    target: document.body,
-    props: {
-      name: 'Svelte'
-    }
+    target: document.querySelector('#app'),
+    hydratable: true
   });
-
-  window.app = app;
 })
 
