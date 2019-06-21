@@ -2,7 +2,9 @@
   "name": "fish-hub",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "https://github.com/rails/webpacker.git"
+    "@rails/webpacker": "https://github.com/rails/webpacker.git",
+    "svelte": "^3.5.3",
+    "svelte-loader": "^2.13.4"
   },
   "devDependencies": {
     "webpack-dev-server": "^3.7.2"
